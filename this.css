@@ -2,19 +2,37 @@ figure {
     display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 23%;
+  width: 23%; /* Setting a starter width for everything in the figure section. Can be adjusted if needed */
 
-    border: 2px solid black;
+    border: 2px solid black; /*Adding a black rectangle */
       
-      margin: auto;
 }
 
 h1 {
-    text-align: center;
-    border: 2px solid black;
+    text-align: center; /*bringing the "Images" title to the top middle */
+    border: 2px solid black; /*Adding another black rectangle */
       
-      margin: auto;
+      
+    margin-bottom: auto; /*Alligning*/
 }
 .Img1 {
     border-radius: 10%;
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: spin 2s linear infinite;
 }
+
+.Img2 {
+  border-radius: 10%;
+    width: 160px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+      transform: rotate(360deg); /* End at 360 degrees */
+  }
