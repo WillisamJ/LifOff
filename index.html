@@ -8,16 +8,11 @@
     
         
 </head>
-<body>
+</main>
     <!--This was put into an h1 element in order to have smaller text in the future.-->
     <h1>Images!</h1>
-    
-</body>
-</html>
-</header>
-<main>
     <!--Creation Of Seperate CSS file for easy accses-->
-    <link rel="stylesheet" type="text/css" href="this.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     </style>
     <figure>
         <!--First Image Reference with a class called "Img1". the img src can be replaced with a different url and the width can be adjusted if needed-->
@@ -38,8 +33,21 @@
         </a>
         <figcaption></figcaption>
     </figure>
-</head>
-<body>
+    <form id="feedback-form">
+        <!-- Dropdown to select the type of feedback -->
+        <select id="feedback-type">
+            <option value="General Comment">General Comment</option>
+            <option value="App Enhancement">App Enhancement</option>
+            <option value="General Feedback">General Feedback</option>
+        </select>
+        <!-- Text area for the user to input feedback comments -->
+        <textarea id="comment" placeholder="Enter your feedback here" rows="4"></textarea>
+        <!-- Submit button to send feedback -->
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <!-- Hidden overlay for displaying enlarged images -->
+     <likes>
+    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
 
 </main>
-
+</html>
